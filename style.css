@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('/fonts/ofont.ru_Georgia.ttf');
+}
+
+:root {
+    --color-green: #4f7a12;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dark-green: #245852;
+    --font-Lato: 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.button {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    padding: 13px 50px;
+    border-radius: 4px;
+}
+
+header {
+    font-family: var(--font-Lato);
+    height: 86px;
+    padding: 0 14%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    align-items: center;
+}
+
+header > a {
+    color: var(--color-green);
+    font-weight: 700;
+    font-size: 120%;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 7vw;
+}
+
+header div {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    column-gap: 3vw;
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+    header div {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0;
+    }
+    header ul {
+        justify-items: center;
+        row-gap: 10px;
+    }
+}
+
+img{
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
